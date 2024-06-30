@@ -1,6 +1,7 @@
 import { IProduct } from "../../interfaces/product"
-import Button from "../../shared/Button"
-import Image from "../../shared/Image"
+import Button from "../../shared/ui/Button"
+import Image from "../../shared/ui/Image"
+import Modal from "../../shared/ui/Modal"
 import { textSlicer } from "../../utils/functions"
 
 interface IProps {
@@ -32,6 +33,7 @@ function ProductCard({ product }: IProps) {
         <Button className="bg-indigo-700">Edit</Button>
         <Button className="bg-red-700">Delete</Button>
       </div>
+      <Modal/>
     </div>
   )
 }
